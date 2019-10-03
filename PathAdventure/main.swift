@@ -8,6 +8,10 @@
 
 import Foundation
 
+//================================
+//===========Path Selection=======
+//================================
+
 print("""
 Running late for class at 9:10am, you have three options to get to Pursuit.
 
@@ -19,6 +23,10 @@ Which do you choose?
 """)
 var pathNum = Int(readLine() ?? "-1") ?? -1
 
+//================================
+//===========Subway Path==========
+//================================
+
 if pathNum == 1 {
     print("""
 You walk 10 minutes to the subway, and swipe in. The local is about to arrive, and the express is not far behind.
@@ -28,12 +36,9 @@ Do you take the local or the express?
 2: Express
 """)
 }
+
+
 let subwayPath1 = Int(readLine() ?? "-1") ?? -1
-
-
-
-
-
 
 if subwayPath1 == 1 {
     print("""
@@ -49,6 +54,9 @@ You are late to class after a 3 hour delay.
 """)
 }
 
+//================================
+//===========Bus Path=============
+//================================
 
 if pathNum == 2 {
     print("""
@@ -60,21 +68,21 @@ Do you wait, or walk to the subway?
 """)
 }
 
+
+
 let busPath = Int(readLine() ?? "-1" ) ?? -1
 
-var busTime = Int.random(in: 1...60)
-
-
+var busTime = Int.random(in: 1...70)
 
 
 if busPath == 1 {
     switch busTime {
     case 1...15:
-        print("It took the bus \(busTime) to arrive. You arrive in time to learn some coding!")
+        print("It took the bus \(busTime) minutes to arrive. You arrive in time to learn some coding!")
     case 15...30:
-        print("It took the bus \(busTime) to arrive. You make it to class with seconds to spare!")
+        print("It took the bus \(busTime) minutes to arrive. You make it to class with seconds to spare!")
     case 30...60:
-        print("It took the bus \(busTime) to arrive. You are late to class, but you arrived, eager to learn.")
+        print("It took the bus \(busTime) minutes to arrive. You are late to class, but you arrived, eager to learn.")
     default:
         print("It has taken over an hour (\(busTime)) for the bus to arrive, and you are late for class. Try again tomorrow.")
     }
@@ -82,7 +90,11 @@ if busPath == 1 {
     print("""
 You decide to walk to the subway.
 """)
-}
+} // Finish this narration to point to the pathNum1
+
+//================================
+//===========Walk Path============
+//================================
 
 if pathNum == 3 {
     print("""
@@ -93,12 +105,18 @@ get back home to his sick kids in New Jersey. What do you do?
 2: Give him a dollar, and ask for change
 """)
 }
+
+
+
 let walkPath = Int(readLine() ?? "-1" ) ?? -1
 
 if walkPath == 1 {
     print("""
 Shrugging off the desperate plea of this sketchy guy, you continue to walk to class.
-Looking over your shoulder you notice he is now following you. After several blocks with him
+Looking over your shoulder you notice he is now following you.
+After several blocks with him following you, you finally make it to Pursuit and
+the protection of your fellows. As a group, you scare him off with your newly branded
+programming skills, and you all enjoy a nice day of coding!
 """)
 } else if walkPath == 2 {
     print("""

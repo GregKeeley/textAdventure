@@ -1,5 +1,8 @@
 Greg Keeley
 
-0.01 Text Adventure
+0.02 Text Adventure
+
+v.02 - Updated paths with narration options.
 
 v.01 - Compiled text adventure project with options for each path
+
