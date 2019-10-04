@@ -1,6 +1,6 @@
 Greg Keeley
 
---0.03 Text Adventure--
+--0.04 Text Adventure--
 
 v.04 - Added additional criteria for lab requirements. Added user info section. Added timing for readiblity
 
