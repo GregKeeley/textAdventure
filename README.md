@@ -1,6 +1,8 @@
 Greg Keeley
 
---0.06 Text Adventure--
+--0.07 Text Adventure--
+
+v.07 - fixed some termination points, and updated ending (while loop)
 
 v.06 - Added while loop to complete the text adventure
 
