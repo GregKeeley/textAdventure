@@ -1,6 +1,8 @@
 Greg Keeley
 
---0.04 Text Adventure--
+--0.05 Text Adventure--
+
+v.05 - Added tuples, and fixed termination point
 
 v.04 - Added additional criteria for lab requirements. Added user info section. Added timing for readiblity
 
