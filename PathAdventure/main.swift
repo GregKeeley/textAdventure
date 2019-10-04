@@ -323,3 +323,18 @@ achreologists, along with your mangled bike.
     }
 }
 
+print("You made it to class on time to learn! If you are ready to start class, type ok")
+
+var readyToLearn = readLine() ?? " "
+
+repeat{
+    print("Type Ready to learn to complete")
+    readyToLearn = readLine()?.lowercased() ?? " "
+    switch readyToLearn {
+    case "ready to learn".lowercased():
+print("Awesome! Make sure to study!")
+        break
+    default:
+        print("You need to be ready to learn to complete...")
+    }
+} while readyToLearn != "Ready to learn".lowercased()

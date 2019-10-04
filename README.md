@@ -1,6 +1,8 @@
 Greg Keeley
 
---0.05 Text Adventure--
+--0.06 Text Adventure--
+
+v.06 - Added while loop to complete the text adventure
 
 v.05 - Added tuples, and fixed termination point
 
